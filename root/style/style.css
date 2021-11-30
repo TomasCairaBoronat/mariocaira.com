@@ -3,3 +3,71 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box; }
+
+.textolinks {
+  color: black; }
+  .textolinks a:hover {
+    color: gray; }
+  .textolinks a:active {
+    color: black; }
+
+/*Navbar*/
+.navcolor {
+  background-color: darkblue; }
+
+/*Section 1*/
+.section1 {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+  /* The image used */
+  background-image: url(../assets/images/Banner.jpg);
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20%;
+  padding-bottom: 30%; }
+  .section1 .titulo {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center; }
+    .section1 .titulo .h1 {
+      color: black;
+      font-weight: bolder; }
+    .section1 .titulo .h2 {
+      color: black;
+      font-weight: bolder;
+      margin-top: 1%;
+      padding-left: 0%; }
+  .section1 .banner {
+    width: 100%;
+    height: auto; }
+
+/*Section 2*/
+.section2 {
+  margin-top: 2%; }
+  .section2 .noticias {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center; }
+  .section2 .empresas {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center; }
+  .section2 .publicidad .publicidad1 {
+    border: black ridge 1px; }
+
+#botonInicio {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  cursor: pointer;
+  width: 50px;
+  height: auto; }
