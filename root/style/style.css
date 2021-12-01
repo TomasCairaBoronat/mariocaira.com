@@ -29,8 +29,16 @@ body {
 .navcolor {
   background-color: darkblue; }
 
+.logo {
+  font-size: 1.5rem; }
+
 .navbarM {
   padding-left: 1%; }
+
+.logosNavbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: end; }
 
 /*Section 1*/
 .section1 {
@@ -51,7 +59,7 @@ body {
     .section1 .titulo .h2 {
       color: black;
       font-weight: bolder;
-      margin-top: 5%;
+      margin-top: 2.8%;
       padding-left: 0%;
       font-size: 2rem; }
   .section1 .banner {
@@ -153,6 +161,11 @@ body {
   /*Navbar Movil*/
   .navbarM {
     padding-left: 5%; }
+  .logosNavbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; }
   /*Section 1 movil*/
   .section1 {
     display: flex;
@@ -172,7 +185,7 @@ body {
       .section1 .titulo .h2 {
         color: black;
         font-weight: bolder;
-        margin-top: 3%;
+        margin-top: 4%;
         padding-left: 0%;
         font-size: 1rem; }
     .section1 .banner {
@@ -188,6 +201,7 @@ body {
       align-content: center;
       justify-content: center; }
       .section2 .noticias .noticiasH2 {
+        margin-top: 5%;
         color: darkblue; }
     .section2 .empresas {
       display: flex;
@@ -195,6 +209,7 @@ body {
       align-content: center;
       justify-content: center; }
       .section2 .empresas .empresasH2 {
+        margin-top: 5%;
         color: darkblue; }
     .section2 .publicidad .colorPublicidad {
       background-color: darkblue;
@@ -254,3 +269,35 @@ body {
     justify-items: center; }
     .section3 .mccOratoria a:hover {
       color: black; } }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /*Navbar tablet Chica*/
+  .logosNavbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 10%;
+    margin-left: 15%; }
+  /*Section 1 tablet chica*/
+  .section1 {
+    display: flex;
+    flex-flow: row wrap; }
+    .section1 .titulo {
+      display: flex;
+      flex-flow: row wrap;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      padding-left: 0.6%; }
+      .section1 .titulo .h1 {
+        color: black;
+        font-weight: bolder;
+        font-size: 2rem; }
+        .section1 .titulo .h1 .barra {
+          font-size: 1rem; }
+      .section1 .titulo .h2 {
+        color: black;
+        font-weight: bolder;
+        margin-top: 1.7%;
+        padding-left: 0%;
+        font-size: 1rem; } }
