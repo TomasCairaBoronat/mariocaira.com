@@ -257,7 +257,21 @@ background-color: $navColor;
             }
     }    
 }
-
+/*Publicitar.html*/
+.section2PublicidadRow{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+ .textoPublicidad{
+     font-size: 1.5rem;
+     width: 80%;
+ }
+}
+.publicitarH2{
+    padding-left: 30%;
+    color: #2a53c1;
+}
 #botonInicio{
     position: fixed;
     bottom: 100px; 
