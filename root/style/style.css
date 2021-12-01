@@ -148,6 +148,48 @@ body {
 .footer {
   background-color: darkblue; }
 
+/*Notas*/
+.section2Nota .nombre {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center; }
+
+.section2Nota .encabezado {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: center; }
+  .section2Nota .encabezado .secondary {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 5%; }
+
+.section2Nota .imagenNota {
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+  .section2Nota .imagenNota .imagenUni {
+    width: 70%;
+    height: auto; }
+
+.section2Nota .textoNota {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  width: 70%;
+  font-size: 1.5rem; }
+  .section2Nota .textoNota aside {
+    border-left: blue 2px solid;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 60%;
+    float: center;
+    font-style: italic;
+    font-weight: bold; }
+
 #botonInicio {
   position: fixed;
   bottom: 100px;
@@ -268,7 +310,44 @@ body {
     align-items: center;
     justify-items: center; }
     .section3 .mccOratoria a:hover {
-      color: black; } }
+      color: black; }
+  /*Notas Movil*/
+  .section2Nota .nombre {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center; }
+  .section2Nota .encabezado {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center; }
+    .section2Nota .encabezado .secondary {
+      font-size: 1.2rem;
+      font-weight: bold; }
+  .section2Nota .imagenNota {
+    display: flex;
+    justify-content: center;
+    align-content: center; }
+    .section2Nota .imagenNota .imagenUni {
+      width: 100%;
+      height: auto; }
+  .section2Nota .textoNota {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    font-size: 1.5rem; }
+    .section2Nota .textoNota aside {
+      border-left: blue 2px solid;
+      display: flex;
+      align-self: left;
+      justify-self: left;
+      font-weight: bold;
+      width: 60%;
+      float: center;
+      font-style: italic; } }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /*Navbar tablet Chica*/
