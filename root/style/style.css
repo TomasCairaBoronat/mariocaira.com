@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /*Reset CSS*/
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
 
 .textolinks {
   color: black; }
@@ -11,63 +15,242 @@
   .textolinks a:active {
     color: black; }
 
+.texto {
+  font-weight: 600; }
+
+.textolinksBlanco {
+  color: white; }
+  .textolinksBlanco a:hover {
+    color: gray; }
+  .textolinksBlanco a:active {
+    color: white; }
+
 /*Navbar*/
 .navcolor {
   background-color: darkblue; }
 
+.navbarM {
+  padding-left: 1%; }
+
 /*Section 1*/
 .section1 {
   display: flex;
-  flex-flow: row wrap;
-  align-content: center;
-  justify-content: center;
-  /* The image used */
-  background-image: url(../assets/images/Banner.jpg);
-  /* Full height */
-  height: 100%;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 20%;
-  padding-bottom: 30%; }
+  flex-flow: row wrap; }
   .section1 .titulo {
     display: flex;
     flex-flow: row wrap;
-    align-content: center;
-    justify-content: center; }
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 0.6%; }
     .section1 .titulo .h1 {
       color: black;
-      font-weight: bolder; }
+      font-weight: bolder;
+      font-size: 5rem; }
+      .section1 .titulo .h1 .barra {
+        font-size: 1rem; }
     .section1 .titulo .h2 {
       color: black;
       font-weight: bolder;
-      margin-top: 1%;
-      padding-left: 0%; }
+      margin-top: 5%;
+      padding-left: 0%;
+      font-size: 2rem; }
   .section1 .banner {
     width: 100%;
     height: auto; }
 
 /*Section 2*/
 .section2 {
-  margin-top: 2%; }
+  margin-top: 2%;
+  margin-left: 7%; }
   .section2 .noticias {
     display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    justify-content: center; }
+    flex-flow: column wrap; }
+    .section2 .noticias .noticiasH2 {
+      color: darkblue; }
   .section2 .empresas {
     display: flex;
-    flex-flow: column wrap;
-    align-content: center; }
-  .section2 .publicidad .publicidad1 {
+    flex-flow: column wrap; }
+    .section2 .empresas .empresasH2 {
+      color: darkblue; }
+  .section2 .publicidad .colorPublicidad {
+    background-color: darkblue;
+    color: white; }
+    .section2 .publicidad .colorPublicidad a:hover {
+      color: gray; }
+    .section2 .publicidad .colorPublicidad a:active {
+      color: white; }
+    .section2 .publicidad .colorPublicidad .textoPublicidad {
+      color: white; }
+      .section2 .publicidad .colorPublicidad .textoPublicidad a:hover {
+        color: gray; }
+      .section2 .publicidad .colorPublicidad .textoPublicidad a:active {
+        color: white; }
+  .section2 .publicidadH4 {
+    margin-left: 10%;
+    color: white; }
+    .section2 .publicidadH4 a:hover {
+      color: gray; }
+    .section2 .publicidadH4 a:active {
+      color: white; }
+  .section2 .publicidadH5 {
+    margin-left: 10%;
+    margin-bottom: 5%;
+    color: white; }
+    .section2 .publicidadH5 a:hover {
+      color: gray; }
+    .section2 .publicidadH5 a:active {
+      color: white; }
+  .section2 .publicidad2 {
     border: black ridge 1px; }
+  .section2 .publicidad3 iframe {
+    width: 100%;
+    height: 215px; }
+
+/*Section 3*/
+.section3 .section3H2 {
+  font-weight: bolder; }
+
+.section3 .section3P {
+  font-size: 1.3rem; }
+
+.section3 .mccTravel {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-items: center;
+  color: white;
+  background-color: black; }
+
+.section3 .mccOratoria {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: gray;
+  color: white;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-items: center; }
+  .section3 .mccOratoria a:hover {
+    color: black; }
+
+/*section 4*/
+/*footer*/
+.footer {
+  background-color: darkblue; }
 
 #botonInicio {
   position: fixed;
-  bottom: 20px;
+  bottom: 100px;
   right: 10px;
   z-index: 99;
   cursor: pointer;
   width: 50px;
   height: auto; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  /*Navbar Movil*/
+  .navbarM {
+    padding-left: 5%; }
+  /*Section 1 movil*/
+  .section1 {
+    display: flex;
+    flex-flow: row wrap; }
+    .section1 .titulo {
+      display: flex;
+      flex-flow: row wrap;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      padding-left: 0.6%; }
+      .section1 .titulo .h1 {
+        color: black;
+        font-weight: bolder;
+        font-size: 2rem; }
+        .section1 .titulo .h1 .barra {
+          font-size: 1rem; }
+      .section1 .titulo .h2 {
+        color: black;
+        font-weight: bolder;
+        margin-top: 3%;
+        padding-left: 0%;
+        font-size: 1rem; }
+    .section1 .banner {
+      width: 100%;
+      height: auto; }
+  /*Section 2 movil*/
+  .section2 {
+    margin-top: 2%;
+    margin-left: 0%; }
+    .section2 .noticias {
+      display: flex;
+      flex-flow: column wrap;
+      align-content: center;
+      justify-content: center; }
+      .section2 .noticias .noticiasH2 {
+        color: darkblue; }
+    .section2 .empresas {
+      display: flex;
+      flex-flow: column wrap;
+      align-content: center;
+      justify-content: center; }
+      .section2 .empresas .empresasH2 {
+        color: darkblue; }
+    .section2 .publicidad .colorPublicidad {
+      background-color: darkblue;
+      color: white; }
+      .section2 .publicidad .colorPublicidad a:hover {
+        color: gray; }
+      .section2 .publicidad .colorPublicidad a:active {
+        color: white; }
+      .section2 .publicidad .colorPublicidad .textoPublicidad {
+        color: white; }
+        .section2 .publicidad .colorPublicidad .textoPublicidad a:hover {
+          color: gray; }
+        .section2 .publicidad .colorPublicidad .textoPublicidad a:active {
+          color: white; }
+    .section2 .publicidadH4 {
+      margin-left: 7%;
+      color: white; }
+      .section2 .publicidadH4 a:hover {
+        color: gray; }
+      .section2 .publicidadH4 a:active {
+        color: white; }
+    .section2 .publicidadH5 {
+      margin-left: 14%;
+      margin-bottom: 5%;
+      color: white; }
+      .section2 .publicidadH5 a:hover {
+        color: gray; }
+      .section2 .publicidadH5 a:active {
+        color: white; }
+    .section2 .textoPublicidad {
+      padding-left: 5%; }
+    .section2 .publicidad2 {
+      border: black ridge 1px; }
+  /*Section 3 movil*/
+  .section3 .section3H2 {
+    font-weight: bolder; }
+  .section3 .section3P {
+    font-size: 1.3rem;
+    padding-left: 15%; }
+  .section3 .mccTravel {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    background-color: black; }
+  .section3 .mccOratoria {
+    padding-top: 4%;
+    padding-bottom: 4%;
+    background-color: gray;
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-items: center; }
+    .section3 .mccOratoria a:hover {
+      color: black; } }

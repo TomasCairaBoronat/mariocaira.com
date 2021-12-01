@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /*Reset CSS*/
 $navColor: darkblue;
 *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
 }
 .textolinks{
     color: black;
@@ -14,45 +18,51 @@ $navColor: darkblue;
         color: black;
     }
 }
+.texto{
+    font-weight: 600;
+}
+.textolinksBlanco{
+    color: white;
+    a:hover{
+        color: gray;
+    }
+    a:active{
+        color: white;
+    }
+}
 /*Navbar*/
 .navcolor{
     background-color: $navColor;
+}
+.navbarM{
+    padding-left: 1%;
 }
 
 /*Section 1*/
 .section1{
         display: flex;
         flex-flow: row wrap;
-        align-content: center;
-        justify-content: center;
-        /* The image used */
-        background-image: url(../assets/images/Banner.jpg);
-        
-        /* Full height */
-        height: 100%;
-      
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-top: 20%;
-        padding-bottom: 30%;
 
         .titulo{
             display: flex;
             flex-flow: row wrap;
-            align-content: center;
-            justify-content: center;
-            
+            padding-top: 2%;
+            padding-bottom: 2%;
+            padding-left: 0.6%;
             .h1{
-                color: rgb(0, 0, 0);
+                color: black;
                 font-weight: bolder;
+                font-size: 5rem;
+                .barra{
+                    font-size: 1rem;
+                }
             }
             .h2{
                 color: black;
                 font-weight: bolder;
-                margin-top: 1%;
+                margin-top: 5%;
                 padding-left: 0%;
+                font-size: 2rem;
             }
     }
     .banner{
@@ -63,30 +73,270 @@ $navColor: darkblue;
 /*Section 2*/
 .section2{
     margin-top: 2%;
+    margin-left: 7%;
     .noticias{
         display: flex;
         flex-flow: column wrap;
-        align-content: center;
-        justify-content: center;
+        .noticiasH2{
+            color: $navColor;
+        }
+        
     }
     .empresas{
         display: flex;
         flex-flow: column wrap;
-        align-content: center;
-    }
-    .publicidad{
-        .publicidad1{
-            border: black ridge 1px;
+        .empresasH2{
+            color: $navColor;
         }
     }
+    .publicidad{
+        .colorPublicidad{
+            background-color: $navColor;
+                color: white;
+                a:hover{
+                    color: gray;
+                }
+                a:active{
+                    color: white;
+                }
+                .textoPublicidad{
+                    color: white;
+                a:hover{
+                    color: gray;
+                }
+                a:active{
+                    color: white;
+                }
+                }
+            }
+        }
+        .publicidadH4{
+            margin-left: 10%;
+            color: white;
+                a:hover{
+                    color: gray;
+                }
+                a:active{
+                    color: white;
+                }
+        }
+        .publicidadH5{
+            margin-left: 10%;
+            margin-bottom: 5%;
+            color: white;
+                a:hover{
+                    color: gray;
+                }
+                a:active{
+                    color: white;
+                }
+        }
+        .publicidad2{
+            border: black ridge 1px;
+        }
+        .publicidad3{
+            iframe{
+
+                width: 100%;
+                height: 215px;
+            }
+        }
+    }
+    
+/*Section 3*/
+.section3{
+    .section3H2{
+        font-weight: bolder;
+    }
+    .section3P{
+        font-size: 1.3rem;
+    }
+    .mccTravel{
+        padding-top: 4%;
+        padding-bottom: 4%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-items: center;
+        color: white;
+        background-color: black;
+    }
+    .mccOratoria{
+        padding-top: 4%;
+        padding-bottom: 4%;
+        background-color: gray;
+        color: white;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-items: center;
+        a:hover{
+            color: black;
+        }
+        
+    }
 }
+
+/*section 4*/
+
+
+/*footer*/
+.footer{
+background-color: $navColor;
+}
+
+
 #botonInicio{
     position: fixed;
-    bottom: 20px; 
+    bottom: 100px; 
     right: 10px;
     z-index: 99;
     cursor: pointer;
     width: 50px;
     height: auto; 
   }
-  
+  @media only screen and (min-width: 320px) and (max-width: 767px){
+    /*Navbar Movil*/
+    .navbarM{
+        padding-left: 5%;
+    }
+    /*Section 1 movil*/
+    .section1{
+    display: flex;
+    flex-flow: row wrap;
+
+    .titulo{
+        display: flex;
+        flex-flow: row wrap;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        padding-left: 0.6%;
+        .h1{
+            color: black;
+            font-weight: bolder;
+            font-size: 2rem;
+            .barra{
+                font-size: 1rem;
+            }
+        }
+        .h2{
+            color: black;
+            font-weight: bolder;
+            margin-top: 3%;
+            padding-left: 0%;
+            font-size: 1rem;
+        }
+}
+.banner{
+    width: 100%;
+    height: auto;
+}
+}
+    /*Section 2 movil*/
+.section2{
+    margin-top: 2%;
+    margin-left: 0%;
+    
+    .noticias{
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+    justify-content: center;
+        .noticiasH2{
+            color: $navColor;
+        }
+        
+    }
+    .empresas{
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+    justify-content: center;
+        .empresasH2{
+            color: $navColor;
+        }
+    }
+    .publicidad{
+        .colorPublicidad{
+            background-color: $navColor;
+                color: white;
+                a:hover{
+                    color: gray;
+                }
+                a:active{
+                    color: white;
+                }
+                .textoPublicidad{
+                    color: white;
+                a:hover{
+                    color: gray;
+                }
+                a:active{
+                    color: white;
+                }
+                }
+            }
+        }
+        .publicidadH4{
+            margin-left: 7%;
+            color: white;
+                a:hover{
+                    color: gray;
+                }
+                a:active{
+                    color: white;
+                }
+        }
+        .publicidadH5{
+            margin-left: 14%;
+            margin-bottom: 5%;
+            color: white;
+                a:hover{
+                    color: gray;
+                }
+                a:active{
+                    color: white;
+                }
+        }
+        .textoPublicidad{
+            padding-left: 5%;
+        }
+        .publicidad2{
+            border: black ridge 1px;
+        }
+    }
+    /*Section 3 movil*/
+.section3{
+    .section3H2{
+        font-weight: bolder;
+    }
+    .section3P{
+        font-size: 1.3rem;
+        padding-left: 15%;
+    }
+    .mccTravel{
+        padding-top: 4%;
+        padding-bottom: 4%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-items: center;
+        color: white;
+        background-color: black;
+    }
+    .mccOratoria{
+        padding-top: 4%;
+        padding-bottom: 4%;
+        background-color: gray;
+        color: white;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-items: center;
+        a:hover{
+            color: black;
+        }
+        
+    }
+}
+  }
