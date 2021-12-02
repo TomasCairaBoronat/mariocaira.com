@@ -49,7 +49,9 @@ body{
     flex-flow: row wrap;
     justify-content:end;
 }
-
+.linksPosts{
+    background-color: darkblue;
+}
 /*Section 1*/
 .section1{
         display: flex;
@@ -83,15 +85,16 @@ body{
     }
 }
 /*Section 2*/
+.noticiasH2{
+    color: $navColor;
+}
 .section2{
     margin-top: 2%;
     margin-left: 7%;
     .noticias{
         display: flex;
         flex-flow: column wrap;
-        .noticiasH2{
-            color: $navColor;
-        }
+        
         
     }
     .empresas{
@@ -274,6 +277,43 @@ background-color: $navColor;
     padding-left: 30%;
     color: #2a53c1;
 }
+ /*todoPosts.html*/
+ .noticiasH1{
+     color: darkblue;
+ }
+ .h2TodosPosts{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    
+     
+ }
+ .noticiasFila{
+     justify-content: center;
+     align-content: center;
+     .nota1Posts{
+         margin: 2%;
+     }
+     .empresas1Posts{
+         margin: 2% ;
+     }
+     .nota2Posts{
+         margin: 2% ;
+     }
+     .empresas2{
+         margin: 2%;
+     }
+     .nota3{
+         margin: 2%;
+     }
+     .empresas3{
+         margin: 2%;
+     }
+
+ }
+
+
 #botonInicio{
     position: fixed;
     bottom: 20px; 

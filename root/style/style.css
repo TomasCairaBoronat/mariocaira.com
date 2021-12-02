@@ -44,6 +44,9 @@ body {
   flex-flow: row wrap;
   justify-content: end; }
 
+.linksPosts {
+  background-color: darkblue; }
+
 /*Section 1*/
 .section1 {
   display: flex;
@@ -71,14 +74,15 @@ body {
     height: auto; }
 
 /*Section 2*/
+.noticiasH2 {
+  color: darkblue; }
+
 .section2 {
   margin-top: 2%;
   margin-left: 7%; }
   .section2 .noticias {
     display: flex;
     flex-flow: column wrap; }
-    .section2 .noticias .noticiasH2 {
-      color: darkblue; }
   .section2 .empresas {
     display: flex;
     flex-flow: column wrap; }
@@ -218,6 +222,32 @@ body {
 .publicitarH2 {
   padding-left: 30%;
   color: #2a53c1; }
+
+/*todoPosts.html*/
+.noticiasH1 {
+  color: darkblue; }
+
+.h2TodosPosts {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center; }
+
+.noticiasFila {
+  justify-content: center;
+  align-content: center; }
+  .noticiasFila .nota1Posts {
+    margin: 2%; }
+  .noticiasFila .empresas1Posts {
+    margin: 2%; }
+  .noticiasFila .nota2Posts {
+    margin: 2%; }
+  .noticiasFila .empresas2 {
+    margin: 2%; }
+  .noticiasFila .nota3 {
+    margin: 2%; }
+  .noticiasFila .empresas3 {
+    margin: 2%; }
 
 #botonInicio {
   position: fixed;
