@@ -264,6 +264,8 @@ background-color: $navColor;
     align-content: center;
     justify-content: center;
  .textoPublicidad{
+    align-content: center;
+    justify-content: center;
      font-size: 1.5rem;
      width: 80%;
  }
@@ -281,7 +283,11 @@ background-color: $navColor;
     width: 50px;
     height: auto; 
   }
-  @media only screen and (min-width: 320px) and (max-width: 767px){
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .logosFooter{
+        padding-top: 10%;
+        padding-left: 15%;
+    }
     /*Navbar Movil*/
     .navbarM{
         padding-left: 5%;
@@ -478,8 +484,26 @@ background-color: $navColor;
                 float: center;
                 font-style: italic;
             }
-    }    
+    }
+      
 }
+ /*Publicitar.html movil*/
+ .section2PublicidadRow{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+ .textoPublicidad{
+    padding-left: 15%;
+    font-size: 1.5rem;
+     width: 80%;
+ }
+ .publicitarH2{
+    padding-left: 15%;
+    margin-bottom: 5%;
+    color: #2a53c1;
+}
+} 
   }
   @media only screen and (min-width: 768px) and (max-width: 991px){
     /*Navbar tablet Chica*/
